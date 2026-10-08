@@ -62,7 +62,7 @@ Nota: `speechiness`, `acousticness`, `liveness` e `instrumentalness` restano asi
 - **Modello finale** (`K_start = 12`, `J_start = 8`): 3 fattori comuni e `J_s = (2, 3, 3, 2, 3, 3)` fattori specifici.
 - **Post-processing:** colonne dei loadings ordinate per varianza spiegata, segni invertiti in modo che la maggior parte dei valori di ogni colonna sia positiva.
 
-## Riproducibilità e limiti noti
+## Limiti
 
 - Il preprocessing è un'unica pipeline standardizzata usata sia per l'analisi esplorativa sia per la stima; piccole differenze numeriche rispetto a quanto riportato in tesi sono possibili.
 - La funzione di stima presenta un bug nel caso di un solo fattore studio-specifico (`J_s = 1`). Non si manifesta con le configurazioni usate qui.
